@@ -1,0 +1,58 @@
+.id-page {
+  min-height: 100vh;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.id-card {
+  width: 360px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  animation: scaleUp 0.6s ease;
+}
+
+.id-header {
+  background: var(--purple);
+  padding: 18px;
+  text-align: center;
+}
+
+.id-body {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+}
+
+.photo {
+  width: 90px;
+  height: 110px;
+  background: #333;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.id-footer {
+  padding: 14px;
+  font-size: 12px;
+  text-align: right;
+  border-top: 1px solid #333;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
