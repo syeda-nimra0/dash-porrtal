@@ -2,7 +2,7 @@ import "./IDCard.css";
 
 function IDCard() {
   // Temporary dummy data
-  // Later ye data StudentBio + Courses se aayega
+  
   const student = {
     name: "Syeda Nimra",
     course: "Web Development",
@@ -11,7 +11,7 @@ function IDCard() {
     days: ["Mon", "Wed", "Fri"],
   };
 
-  // Roll number generate (simple but effective)
+
   const rollNumber = "STD-" + Math.floor(1000 + Math.random() * 9000);
 
   return (
@@ -57,3 +57,4 @@ function IDCard() {
 }
 
 export default IDCard;
+
